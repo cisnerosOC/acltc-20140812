@@ -11,5 +11,6 @@
 
 - Read all of these bullets
 - Render the list of people using ng-repeat
-- Make those hide details buttons hide the details when clicked.
+- Make the  details button hide the details when clicked.
 - Turn the hide details button into a toggle details button.
+- Allow the user to click the person’s name to toggle details.
