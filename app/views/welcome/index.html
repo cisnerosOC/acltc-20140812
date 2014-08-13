@@ -1,15 +1,18 @@
 <!-- TODO: add ng-app="app" to the next line -->
-<div>
+<div ng-app="app">
 
   <!-- TODO: add ng-controller="namesCtrl" to the next line -->
-  <div>
-    <button>Hide Details</button>
+  <div ng-controller="namesCtrl">
+    <button  ng-click="click()">Hide Details</button>
+
     <ul>
       <!-- TODO: add ng-repeat to the next line -->
-      <li>
-      Bob
-      <div class="details">
-        Small batch salvia Marfa chillwave delectus, odio forage art party.
+      <li ng-repeat="person in people" >
+      <div ng-click="toggleOne(person)">
+      {{person.name}}
+      </div>
+      <div ng-if="hideAgain(person)"  >
+      <span ng-if="hide()">{{person.details}} </span>
       </div>
       </li>
     </ul>
